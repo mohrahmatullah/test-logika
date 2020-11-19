@@ -70,5 +70,16 @@
     echo "Original Array :\n";
     echo implode(', ',$test_array );
     echo "\nSorted Array\n:";
-    echo implode(', ',bubble_Sort($test_array)). PHP_EOL
+    echo implode(', ',bubble_Sort($test_array)). PHP_EOL;
+
+    echo "<br><br><br><br>";
+    $MAX_VALUE=0;
+
+    $a=array(11, 6, 31, 201, 99, 861, 1, 7, 14, 79);
+    for($i=0;$i<count($a) ;$i++){
+             if($a[$i] > $MAX_VALUE){
+                 $MAX_VALUE=$a[$i];
+             }
+    }
+    echo "Bilangan Terbesarnya dari [11, 6, 31, 201, 99, 861, 1, 7, 14, 79] adalah <b>".$MAX_VALUE."</b>";
 ?>
