@@ -38,4 +38,37 @@
     for ($i=101; $i<=120; $i++){ 
       echo  $i. " Bilangan prima?  " . cekstatus(isPrime($i)) . "<br>";
     }
+
+
+    echo "<br><br><br><br>";
+    for ($i=5; $i>=1; $i--){
+        for ($j=5; $j>=$i; $j--){
+              echo $j;
+         }echo "<br>";
+    }
+
+    echo "<br><br><br><br>";
+    function bubble_Sort($my_array )
+    {
+        do
+        {
+            $swapped = false;
+            for( $i = 0, $c = count( $my_array ) - 1; $i < $c; $i++ )
+            {
+                if( $my_array[$i] > $my_array[$i + 1] )
+                {
+                    list( $my_array[$i + 1], $my_array[$i] ) =
+                            array( $my_array[$i], $my_array[$i + 1] );
+                    $swapped = true;
+                }
+            }
+        }
+        while( $swapped );
+    return $my_array;
+    }
+     $test_array = array(99, 2, 64, 8, 111, 33, 65, 11, 102, 50);
+    echo "Original Array :\n";
+    echo implode(', ',$test_array );
+    echo "\nSorted Array\n:";
+    echo implode(', ',bubble_Sort($test_array)). PHP_EOL
 ?>
