@@ -41,10 +41,11 @@
 
 
     echo "<br><br><br><br>";
-    for ($i=5; $i>=1; $i--){
-        for ($j=5; $j>=$i; $j--){
-              echo $j;
-         }echo "<br>";
+    for ($i=1; $i<=8; $i++) {
+        for($h=1; $h<=$i; $h++){
+            echo "$h";
+        }
+        echo "<br>";
     }
 
     echo "<br><br><br><br>";
@@ -82,4 +83,6 @@
              }
     }
     echo "Bilangan Terbesarnya dari [11, 6, 31, 201, 99, 861, 1, 7, 14, 79] adalah <b>".$MAX_VALUE."</b>";
+
+    
 ?>
